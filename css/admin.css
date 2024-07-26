@@ -1,0 +1,141 @@
+/*---------------------------------------
+   MODAL              
+-----------------------------------------*/
+
+  .modal-content {
+    padding: 2rem 3rem;
+  }
+  
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    border: 0;
+    padding: 0;
+  }
+  
+  .membership-form a {
+    color: #0016c4;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    color: black;
+    }
+
+.webform input, button#submit-button {
+        height: calc(2.25rem + 20px);
+} 
+.form-control {
+    border-radius: var(--border-radius-small);
+    margin: 1.3rem 0;
+}
+
+button#submit-button1 {
+    background: rgb(0, 0, 0);
+    border-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    height: calc(2.25rem + 20px);
+}
+
+button#submit-button1:hover {
+  background: #035cb6;
+}
+
+.myAlert-bottom{
+  position: fixed;
+  bottom: 5px;
+  left:2%;
+  width: 96%;
+}
+.alert{
+  display: none;
+}
+/*
+.alert-box{
+ display: none;
+}
+
+.alert-box {
+  position: fixed;
+  bottom: -133px;
+  left: 45%;
+  max-width: 300px;
+  min-height: 300px;
+}
+
+.alert-icon {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+*/
+
+
+/*---------------------------------------
+   Table              
+-----------------------------------------*/
+  
+  body {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: normal;
+    background-color: #2b3035;
+    color: gray;
+  }
+
+  .ftco-section {
+    padding: 7em 0;
+  }
+
+  .ftco-no-pt {
+    padding-top: 0;
+  }
+
+  .ftco-no-pb {
+    padding-bottom: 0;
+  }
+
+  .heading-section {
+    font-size: 28px;
+    color: #fff;
+  }
+
+  .img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .table-wrap {
+    overflow-x: scroll;
+  }
+
+  .table {
+    min-width: 1000px !important;
+    width: 100%;
+  }
+  .table thead th {
+    border: none;
+    padding: 20px 30px;
+    font-size: 16px;
+    color: #fff;
+    border-bottom: 4px solid #2b3035;
+  }
+  .table tbody tr {
+    margin-bottom: 10px;
+  }
+  .table tbody th,
+  .table tbody td {
+    border: none;
+    padding: 20px 30px;
+    border-bottom: 3px solid #2b3035;
+    font-size: 14px;
+  }
+
+  i {
+    cursor: pointer;
+  }

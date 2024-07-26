@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="https://kit.fontawesome.com/451c2f4cc4.js" crossorigin="anonymous"></script>
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="admin.css">
+    
+  </head>
+  <body>
+
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+
+          <img src="images/logo.png" width="60px" height="60px">
+          <a class="navbar-brand ml-4" href="index.html" style="font-size: 25px;">DoBu Martial Arts</a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-lg-auto">
+                  <li class="nav-item">
+                      <a href="#!" class="nav-link smoothScroll">Home</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a href="#!" class="nav-link smoothScroll">About Us</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a href="#!" class="nav-link smoothScroll">Classes</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a href="#!" class="nav-link smoothScroll">Schedules</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a href="#!" class="nav-link smoothScroll">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#!" class="nav-link smoothScroll" data-toggle="modal" data-target="#membershipForm">Register</a>
+                  </li>
+              </ul>
+          </div>
+
+      </div>
+  </nav>
+
+
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center mb-4 mt-4">
+            <h2 class="heading-section">DoBu Marital Arts Admin Dasboard</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table-wrap">
+              <table class="table table-bordered table-dark table-hover">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone No</th>
+                    <th>Age</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="membershipForm" tabindex="-1" role="dialog" aria-labelledby="membershipFormLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+
+        <div class="modal-content">
+          <div class="modal-header">
+
+            <h2 class="modal-title" id="membershipFormLabel">Membership Form</h2>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <form class="membership-form webform" role="form" id="form1">
+                <input type="text" class="form-control" name="cf-name" placeholder="Name" id="form-name">
+
+                <input type="email" class="form-control" name="cf-email" placeholder="Email" pattern="[^ @]*@[^ @]*" required id="form-email">
+
+                <input class="form-control" name="cf-message" placeholder="Age" id="form-age"></input>
+
+                <input type="tel" class="form-control" name="cf-phone" placeholder="Phone number" required  id="form-phone">
+
+                <button type="submit" class="form-control" id="submit-button1" name="submit">Edit</button>
+
+            </form>
+          </div>
+
+          <div class="modal-footer"></div>
+
+        </div>
+      </div>
+  </div>
+  
+  <div class="myAlert-bottom alert alert-primary text-center">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <h4 class="alert-heading">Edited Data Successfully!</h4>
+    Now you have logged in as <strong id="alertText"></strong> with <strong id="smallText"></strong> email account.
+  </div>
+  
+
+  <!-- 
+  <div class="alert-box" style="float: none; margin: 0 auto;">
+    <div class="alert alert-success">
+      <div class="alert-icon text-center">
+        <i class="fa-regular fa-thumbs-up fa-bounce fa-3x"></i>
+      </div>
+      <div class="alert-message text-center">
+        <strong>Successfully Edited!</strong>
+      </div>
+    </div>
+  </div>
+  -->
+
+    <script src="showData.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
